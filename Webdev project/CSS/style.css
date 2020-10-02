@@ -1,0 +1,853 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: rgba(23, 32, 42);
+	color: white;
+	line-height: 1.6;
+	font-family: 'Monda', sans-serif;
+}
+hr{
+	border-top: 1px solid white;
+}
+
+#header_mobile{
+	display: none;
+}
+
+#header h2{
+	border-left:3.5px solid #D32F2F;
+	width: max-content;
+}
+
+#header h2, nav, ul, li{
+	display: inline-block;
+}
+
+#header ul li{
+	list-style: none;
+	border:1px solid #D32F2F;
+	cursor: pointer;
+	transition: all .2s linear;
+	z-index: 10;
+}
+
+#header ul li:hover{
+	border:2px solid #D32F2F;
+	font-size: 1vw;
+	border-radius: 8px;
+	color: white;
+}
+
+#navigation_container{
+	position: fixed;
+	right: 55px;
+	display: none;
+	overflow: hidden;
+}
+
+#menu{
+	position: fixed;
+	right: 50px;
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.bar{
+	height: 5px;
+	width: 100%;
+	/*background-color: #b81568;*/
+	background-color: #D32F2F;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+#menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+#menu-bar{
+	z-index: 2;	
+}
+
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+/*header section end here*/
+
+/*home section starts here*/
+.home-text{
+	position: relative;
+	top: 200px;
+	left: 10%;
+}
+
+#home{
+	height: 650px;
+}
+
+#home div h2 span{
+	font-size: 2.3rem;
+}
+
+#home div div{
+	width: 67%;
+	font-size: 1rem;
+	letter-spacing: 1.7px;
+}
+
+#imageContainer{
+	height: 100%;
+	border-left: 1px solid #566573;
+	border-right: 1px solid #566573;
+	margin-left: 6%;
+	padding: 0px;
+}
+
+#hr-container-before{
+	position: absolute;
+	top: 16.5%;
+	left: 47.7%;
+}
+
+#hr-container-after{
+	position: relative;
+	top: 100px;
+	right: 10%;
+}
+
+hr{
+	border-top: 1px solid #566573;
+	/*position: relative;*/
+}
+
+ #hr-home-1{
+	width: 130px;
+}
+ #hr-home-2{
+ 	width: 180%;
+}
+ #hr-home-3{
+	width: 250%;
+}
+/*#hr-home-4{
+	width: 170%;
+}
+ #hr-home-5{
+	width: 150%;
+}
+ #hr-home-6{
+	width: 130%;
+}
+
+*/
+
+
+
+/*home section ends here*/
+
+/*services section starts here*/
+
+#services{
+	background: rgba(25,34,45,0.4);
+}
+
+#services div h1{
+	font-family: 'Cuprum', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 4px;
+	border-bottom: 1px solid #D32F2F;
+}
+
+#hr-services{
+	position: relative;
+	top: 150px;
+}
+#hr-services-2{
+	position: relative;
+	top: 70px;
+	left:1120px;
+	transform: rotateZ(-180deg);
+}
+
+.hr-s{
+	border-top:1px solid #566573;
+	border-bottom: 1px solid #566573;
+}
+#circular-div-container{
+	font-family: 'Monda', sans-serif;
+	position: relative;
+	top: -80px;
+}
+
+#circular-div{
+	border:.4px solid #566573;
+	width: 78%;
+	min-height: : 430px;
+	max-height: 440px;
+	border-radius: 50%;
+}
+
+.inner-div{
+	text-align:center; 
+	border:1px solid white;
+	border-radius: 50%;
+	width: 70%;
+	min-height: 330px;
+	max-height: 330px;
+	color: white;
+	position: relative;
+	top: -68%;
+	font-size: 18px;
+	padding-top:10px;
+	/*overflow-x:  hidden;*/
+}
+
+.inner-div hr{
+	border-top: 1px solid white;
+}
+
+.inner-div p{
+	margin-top: 15%;
+}
+
+#inner_div_1{
+	display: block;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/girl_book.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+#inner_div_2{
+	display: none;
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/man_book.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#inner_div_3{
+	display: none;
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/img3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#inner_div_4{
+	display: none;
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/guidance.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+#inner_div_5{
+	display: none;
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Images/girl_laptop.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+
+#services a{
+	text-decoration: none;
+	color: white;
+}
+
+#services .icon-container{
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	border:1px solid #D32F2F;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#services .icon-container:hover{
+	border: 2px double #D32F2F;
+	color: orange;
+	height: 73px;
+	width: 75px;
+}
+
+#services .icon-container i{
+	font-size: 50px;
+	position: relative;
+	top: 13%;
+}
+
+#services #icon_container_1{
+	top: -9%;
+	left: 40%;
+}
+
+#services #icon-container-2{
+	top: 6%;
+	left: -5.5%;
+}
+#services #icon-container-3{
+	top: -11%;
+	left: 90%;
+}
+#services #icon-container-4{
+	top: 17%;
+	left: 90%;
+}
+#services #icon-container-5{
+	top:5% ;
+	left: -1%;
+}
+
+.inner-div.arrow-top:after{
+  content: " ";
+  position: absolute;
+  right:48%;
+  top: -6%;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid white;	
+}
+
+.inner-div.arrow-top-left:after{
+	content: " ";
+    position: absolute;
+	left:-5%;
+	top: 26%;
+	border-top: none;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid white;	
+    transform: translateY(4px) rotateZ(-67deg);
+}
+
+.inner-div.arrow-top-right:after{
+	content: " ";
+	position: absolute;
+    right:-5%;
+    top:27%;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid white;
+    transform:rotateZ(65deg);
+    border-radius:;
+}
+
+.inner-div.arrow-bottom-right:after{
+	content: " ";
+	position: absolute;
+    right:-4%;
+    top:70%;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid white;
+    transform:rotateZ(115deg);
+    border-radius:;
+}
+
+.inner-div.arrow-bottom-left:after{
+	content: " ";
+	position: absolute;
+    left:-1.5%;
+    top:75%;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid white;
+    transform:rotateZ(-120deg);
+    border-radius:;
+}
+
+#inner{
+	position: relative;
+	top: -67%;
+	transition: 200 linear;
+}
+
+/*services section ends here*/
+
+/*recommendation section starts here*/
+
+#recommanded{
+	background: linear-gradient(90deg,lightgrey, white,lightgrey);
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+}
+
+    .imgBx img{
+    	width:100%;
+    }
+
+    .swiper-slide .imgBx{
+    	width: 100%;
+    	height: 150px;
+    	overflow: hidden;
+    }
+
+    .swiper-slide .details{
+    	box-sizing: border-box;
+    	font-size: 20px;
+    	/*padding: 20px;*/
+    	color: black;
+    }
+    .swiper-slide .details h3{
+    	margin:0;
+    	padding: 0;
+    	font-size: 17px;
+    	padding-top: 5px;
+    	text-align: center;
+    	line-height: 20px;
+    }
+
+/*recommendation section ends here*/
+
+
+/*contact section starts here*/
+#contact-us{
+	margin-top: -55px;
+}
+#contact-main{
+	margin: 0;
+	padding-top: 0;
+	background: url(../Images/contact.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 600px;
+	margin-top: -7.5px;
+}
+
+#contact-form{
+	background:rgba(0,0,0,0.6);
+}
+#contact-form input{
+	border: none;
+	height: 35px;
+	border-left: 3px solid #D32F2F;
+	background-color: #ffffff00;
+}
+
+#contact-form textarea{
+	border: none;
+	border-left: 3px solid #D32F2F;
+	background-color: #ffffff00;
+	padding-left: 3%;
+}
+
+#contact-form #bttn{
+	border: 0px;
+	background: #D32F2F ;
+	border-radius:40px;
+	padding: 5px;
+	width: 150px;
+	color: white;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+#contact-info{
+	background:rgba(23, 32, 42);
+	padding: 2%;
+}
+
+
+/*to-top button*/
+.to-top{
+	color:white;
+	padding-top:1.0em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:white;
+	text-decoration:none;
+	transition:all .3s ease-out;
+	z-index: 10;
+}
+.to-top:before{
+	content:'▲';
+	font-size:1.3em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.8em;
+	height:1.5em;
+	line-height:1.0em;
+	border-color:inherit;
+	padding-left: 6px;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:#D32F2F;
+	border-color:#D32F2F;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+
+#to-top-button{
+	position: fixed;
+	bottom: 4%;
+	right: 3%;
+	z-index: 10;
+}
+
+
+
+/*media queries*/
+@media only screen and (max-width:930px){
+	#hr-services{
+		visibility: hidden;
+	}
+	#hr-services-2{
+		visibility: hidden;
+	}
+}
+
+/*for smartphones*/
+@media only screen and (max-width: 768px){
+
+	/*header section*/
+	#header{
+		display: block;
+	}
+
+	#navigation_container{
+		height: 350px;
+	}
+
+	#navigation_container ul li{
+		position: relative;
+		right: -15px;
+		top: 55px;
+		float: right;
+		width: 100px;
+		background: red;
+		font-size: 0.725rem;
+		text-align: center;
+		margin-top: 0px !important;
+	}
+
+	#navigation_container ul li:hover{
+		position: relative;
+		right: -15px;
+		top: 55px;
+		float: right;
+		width: 115px;
+		background: red;
+		font-size: 0.8rem;
+		text-align: center;
+		margin-top: 0px !important;
+	}
+
+	#menu{
+		right: 20px;
+		width: 25px;
+		height: 18px;
+	}
+
+	.bar{
+		height: 3px;
+		width: 100%;
+	}
+	/*home section*/
+	#hr-container-before{
+		display: none;
+	}
+
+	#imageContainer{
+		display: none;		
+	}
+
+	#home{
+		background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../Images/girl_laptop.jpg);
+		background-size: cover;
+		background-position: center; 
+	}
+
+	#home div h2{
+		font-size: 1.5rem;
+	}
+
+	#home div h2 span{
+		font-size: 1.7rem;
+	}
+
+	#home div div{
+		letter-spacing: 1;
+		line-height: 1.0;
+	}
+
+	#home div div span{
+		font-size: 1.2rem;
+	}
+	#home div h2 span i{
+		font-size: 0.8rem;
+	}
+	/*home section ends here*/
+
+	/*recommendation section starts here*/
+	#recommanded{
+		margin-top: -90px !important;
+	}
+	#recommanded h3{
+		font-size: 1.3rem;
+	}
+
+	#recommanded div div h3{
+		font-size: 1rem;
+	}
+
+	#recommanded span{
+		font-size: 1.1rem !important;
+	}
+	.swiper-slide {
+	    width: 200px;
+	    height: 200px;
+	}
+	/*recommendation section ends here*/
+
+	/*contact us section starts here*/
+	#contact-us h2{
+		font-size: 1.2rem;
+	}
+	#contact-form input{
+		height: 20px;
+		border-left: 2px solid #D32F2F;
+	}
+
+	#contact-form h2{
+		padding-bottom: 0px;
+	}
+
+	#contact-form{
+		margin-right: 99% !important;
+	}
+	
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: white;
+	  opacity: 1; /* Firefox */
+	  font-size: 13px;
+	}
+
+	
+	#bttn{
+		padding-bottom: 26px !important;
+		margin-right: 15px;
+		margin-top: -10px!important;
+		width: 105px !important;
+		font-size: 13px;
+	}
+
+	#contact-info p{
+		font-size: 13px;
+	}
+	/*contact us section ends here*/
+
+
+	/*footer section starts here*/
+
+	#footer div div h1{
+		font-size: 1.5rem;
+	}
+
+	#footer div div p{
+		font-size: 0.9rem !important;
+		line-height: 21px !important;
+	}
+
+	#footer div div p a{
+		font-size: 0.9rem !important;
+		line-height: 21px !important;
+	}
+
+	#footer h4{
+		font-size: 1.4rem;
+		font-weight: 400 !important;
+		padding-left: 0px !important;
+	}
+
+	.subs{
+		margin-top: -45px !important;
+	}
+
+	h5{
+		font-size: 1rem;
+		padding-left: 5px;
+	}
+
+	#footer input{
+		margin-left: 0px !important;
+		width: 200px;
+		font-size: 10px;
+	}
+
+	#footer button{
+		width: 100px !important;
+		padding-top: 2px;
+		font-size: 0.9rem;
+	}
+
+	.copyright{
+		padding-top: 8px;
+		padding-left: 30px;
+	}
+
+
+}
+
+@media only screen and (max-width:550px) {
+	/*service section starts here*/
+	#services div h1{
+		font-size: 1.5rem;
+	}
+
+	#services div p{
+		font-size: 0.95rem !important;
+	}
+
+	
+
+	/*circular division*/
+	#circular-div{
+		border:.4px solid #566573;
+		width: 70%;
+		top: -50px;
+		min-height: : 370px;
+		max-height: 370px;
+	}
+	#services .icon-container{
+		height: 43px;
+		width: 43px;
+	}
+
+	#services .icon-container:hover{
+		border: 2px double #D32F2F;
+		color: orange;
+		height: 45px;
+		width: 45px;
+	}
+	#services .icon-container i{
+		font-size: 30px;
+	}
+
+	#services #icon_container_1{
+		top: -6%;
+		left: 40%;
+	}
+
+	#services #icon-container-2{
+		top: 9%;
+		left: -5.5%;
+	}
+	#services #icon-container-3{
+		top: -3%;
+		left: 92%;
+	}
+	#services #icon-container-4{
+		top: 30%;
+		left: 94%;
+	}
+	#services #icon-container-5{
+		top:19%;
+		left: -7%;
+	}
+
+
+	/*inner div starts here*/
+	#inner{
+		top: -48.3%;
+	}
+	.inner-div{
+		width: 85%;
+		min-height: 300px;
+		max-height: 300px;
+		font-size: 0.9rem;
+	}
+
+	.inner-div.arrow-top:after{
+	  right:51%;
+	  top: -4%;
+	  border-right: 7px solid transparent;
+	  border-left: 7px solid transparent;
+	  border-bottom: 7px solid white;	
+	}
+
+	.inner-div.arrow-top-left:after{
+		left:0%;
+		top: 22%;
+		border-right: 7px solid transparent;
+		border-left: 7px solid transparent;
+		border-bottom: 7px solid white;	
+	    transform: translateY(4px) rotateZ(-67deg);
+	}
+
+	.inner-div.arrow-top-right:after{
+	    right:1%;
+	    top:22%;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
+	    border-bottom: 7px solid white;
+	    transform:rotateZ(61deg);
+	}
+
+	.inner-div.arrow-bottom-right:after{
+	    right:-2%;
+	    top:70%;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
+	    border-bottom: 7px solid white;
+	    transform:rotateZ(110deg);
+	}
+
+	.inner-div.arrow-bottom-left:after{
+	    left:-2.3%;
+	    top:70%;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
+	    border-bottom: 7px solid white;
+	    transform:rotateZ(-113deg);
+	}
+
+
+	/*contact us section*/
+	textarea{
+		width: 280px !important;
+		height: 70px;
+	}
+}
+     
